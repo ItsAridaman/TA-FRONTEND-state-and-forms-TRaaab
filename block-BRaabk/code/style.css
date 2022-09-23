@@ -1,0 +1,8 @@
+.menu-card-div
+{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    flex-direction: row;
+}
