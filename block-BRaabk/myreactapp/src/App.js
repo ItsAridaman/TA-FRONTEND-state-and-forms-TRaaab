@@ -52,10 +52,10 @@ class Menu extends React.Component {
         return (
             <>
                 <div class="category-names">
-                    <button onClick={this.function2}>All</button>
+                    <button class={this.state.active===""?"active":""}onClick={this.function2}>All</button>
                     {
                         uniqueCategory.map((datas) =>
-                            <button onClick={() => this.function1(datas)}>{datas}</button>
+                            <button class={this.state.active===datas?"active":""} onClick={() => this.function1(datas)}>{datas}</button>
                         )}
                 </div>
                 <Card Infor={ActiveCard} />
