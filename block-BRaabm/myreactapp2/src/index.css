@@ -1,0 +1,73 @@
+.main-div
+{
+  display: flex;
+  justify-content: space-between;
+  height: 460px;
+  
+
+}
+
+.div-1
+{
+width: 30%;
+display: flex;
+flex-direction: column;
+}
+
+.div-2
+{
+  width: 70%;
+
+}
+
+button
+{
+  padding: 6px;
+  color: white;
+  background-color: rgb(57, 29, 83);
+  font-size: 13px;
+  margin: 15px;
+}
+
+.error
+{
+border: 2px solid red;
+}
+
+.main-div
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.form
+{
+  display: flex;
+  flex-direction: column;
+}
+
+input
+{
+  margin-top: 10px;
+  border: 1px solid rgb(66, 65, 65);
+  padding: 5px;
+}
+
+h1
+{
+color: rgb(33, 31, 31);
+text-align: center;
+}
+
+label
+{
+  margin-top: 10px;
+}
+
+span{
+  color: red;
+  font-weight: 500;
+}
