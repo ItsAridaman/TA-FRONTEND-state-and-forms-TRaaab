@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://kit.fontawesome.com/6ea53cfc39.js" crossorigin="anonymous"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+
+    <!-- <div id="root" class="root">
+
+    </div>
+
+    <script type="text/babel">
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { counter: 0, difference: 1, limit: "" };
+            }
+
+            LimitOne = () => {
+                this.setState({
+                    limit: 15,
+                })
+            }
+
+            LimitTwo = () => {
+                this.setState({
+                    limit: 30,
+                })
+            }
+            LimitThree = () => {
+                this.setState({
+                    limit: 50,
+                })
+            }
+
+            IncOne = () => {
+                this.setState({
+                    difference: 1,
+                })
+            }
+
+            IncFive = () => {
+                this.setState({
+                    difference: 5,
+                })
+            }
+
+            IncTen = () => {
+                this.setState({
+                    difference: 10,
+                })
+            }
+
+            Increment = () => {
+
+                if (this.state.limit === "") {
+                    this.setState({
+                        counter: this.state.counter + this.state.difference
+                    })
+                }
+
+                else if (this.state.counter < this.state.limit) {
+                    this.setState({
+                        counter: this.state.counter + this.state.difference
+                    })
+                }
+
+            }
+
+            Decrement = () => {
+                this.setState({
+                    counter: this.state.counter - this.state.difference,
+                })
+            }
+
+            Reset = () => {
+                this.setState({
+                    counter: 0,
+                    difference: 1,
+                    limit: ""
+                })
+            }
+            render() {
+
+                return (
+                    <>
+                        <div class="main-div">
+                            <h1>{this.state.counter}</h1>
+
+                            <div class="div-1">
+
+                                <div class="div-1-a">
+                                    <h3>Steps</h3>
+                                    <button onClick={this.IncOne}>1</button>
+                                    <button onClick={this.IncFive}>5</button>
+                                    <button onClick={this.IncTen}>10</button>
+                                </div>
+                                <div class="div-2-a">
+                                    <h3>Max value</h3>
+                                    <button onClick={this.LimitOne}>15</button>
+                                    <button onClick={this.LimitTwo}>30</button>
+                                    <button onClick={this.LimitThree}>50</button>
+                                </div>
+                            </div>
+                            <div class="div-2">
+                                <button class="button-1" onClick={this.Increment}>Increment</button>
+                                <button class="button-1" onClick={this.Decrement}>Decrement</button>
+                                <button class="button-1" onClick={this.Reset}>Reset</button>
+                            </div>
+                        </div>
+                    </>
+                )
+            }
+
+        }
+        ReactDOM.render(<App />, root);
+
+    </script> -->
+
+
+    <div id="root" class="root">
+
+    </div>
+
+    <script type="text/babel">
+
+        class App extends React.Component {
+            constructor(props) {
+                super(props);
+                this.state = { counter: 0, gap: 5, limit: "" };
+            }
+
+            HandleClickAdd = () => {
+                if (this.state.limit === "") {
+                    this.setState({
+                        counter: this.state.counter + this.state.gap
+                    })
+                }
+
+                else if (this.state.counter < this.state.limit) {
+                    this.setState({
+                        counter: this.state.counter + this.state.gap
+                    })
+                }
+            }
+
+            HandleClickSubtract = () => {
+                this.setState({
+                    counter: this.state.counter - this.state.gap,
+                })
+            }
+
+            HandleClickReset = () => {
+                this.setState({
+                    counter: 0,
+                })
+            }
+            render() {
+
+                return (
+                    <>
+                        <div class="main-div">
+                            <h1>{this.state.counter}</h1>
+
+                            <div class="div-1">
+
+                                <div class="div-1-a">
+                                    <h3>Steps</h3>
+                                    {[5, 10, 15].map((gap) =>
+                                        <button class={this.state.gap===gap?"active":""} onClick={() => {
+                                            this.setState({
+                                                gap: gap
+                                            })
+                                        }
+
+                                        }>{gap}</button>)}
+                                </div>
+                                <div class="div-2-a">
+                                    <h3>Max value</h3>
+                                    {[15, 30, 45].map((limit) =>
+                                        <button class={this.state.limit===limit?"active":""} onClick={() => {
+                                            this.setState({
+                                                limit: limit
+                                            })
+                                        }
+
+                                        }>{limit}</button>)}
+                                </div>
+                            </div>
+                            <div class="div-2">
+                                <button class="button-1" onClick={this.HandleClickAdd}>Increment</button>
+                                <button class="button-1" onClick={this.HandleClickSubtract} >Decrement</button>
+                                <button class="button-1" onClick={this.HandleClickReset} >Reset</button>
+                            </div>
+                        </div>
+                    </>
+                )
+            }
+
+        }
+        ReactDOM.render(<App />, root);
+
+    </script>
+
+</body>
+
+</html>
