@@ -1,27 +1,23 @@
-.main-div
-{
+.main-div {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     margin: 0 auto;
     width: 600px;
     text-align: center;
 }
 
-.div-1
-{
-display: flex;
-justify-content: space-around;
-padding: 15px;
+.div-1 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
 }
 
-.div-2
-{
-display: flex;
-justify-content: space-around;
-padding: 15px;
+.div-2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
 }
 
-button
-{
+button {
     background-color: aqua;
     padding: 15px;
     font-size: 25px;
@@ -29,8 +25,9 @@ button
     border: none;
 }
 
-.button-1
-{
+
+
+.button-1 {
     background-color: rgb(27, 90, 90);
     padding: 20px;
     font-size: 20px;
@@ -38,22 +35,17 @@ button
     border: none;
 }
 
-h3
-{
+h3 {
     font-size: 30px;
     color: rgb(69, 67, 67);
 }
 
-h1
-{
+h1 {
     font-size: 40px;
     color: rgb(17, 17, 17);
     margin-top: 20px;
 }
 
-.active
-{
+.active {
     background-color: rgb(168, 168, 190);
 }
-   
-
