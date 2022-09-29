@@ -88,7 +88,7 @@ span{
 .main-div-a {
   width: 50%;
   height: 650px;
-  
+
 }
 
 .Active {
@@ -114,8 +114,7 @@ span{
   margin-top: 15px;
 }
 
-input
-{
+input {
   padding: 13px;
   border: 1px solid rgb(78, 77, 77);
   border-radius: 4px;
@@ -123,22 +122,19 @@ input
 
 }
 
-.address-div
-{
+.address-div {
   display: flex;
   flex-direction: column;
   margin-top: 15px;
 }
 
-.active-step
-{
+.active-step {
   display: flex;
   justify-content: space-around;
   padding: 12px;
 }
 
-.active-step-div
-{
+.active-step-div {
   border: 2px soild gren;
   display: flex;
   justify-content: space-between;
@@ -146,8 +142,7 @@ input
   align-items: center;
 }
 
-.inactive
-{
+.inactive {
   background-color: rgb(228, 228, 244);
   color: black;
   padding: 6px 10px;
@@ -156,14 +151,12 @@ input
   border: 2px soild black;
 }
 
-.h2
-{
+.h2 {
   font-size: 26px;
   font-weight: 600;
 }
 
-.container
-{
+.container {
   border-radius: 8px;
   width: 1000px;
   margin: 0 auto;
@@ -172,20 +165,19 @@ input
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-img
-{
-  width: 100%; /* or any custom size */
-    height: 100%; 
-    object-fit: cover;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+img {
+  width: 100%;
+  /* or any custom size */
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 
 }
 
-button
-{
+button {
   padding: 10px 15px;
-  color:white;
+  color: white;
   background-color: rgb(16, 38, 212);
   width: 80px;
   border-radius: 4px;
@@ -195,43 +187,38 @@ button
 
 
 
-.main-message
-{
+.main-message {
   display: flex;
   flex-direction: column;
 }
 
-textarea
-{
+textarea {
   height: 100px;
   border: 2px solid rgb(41, 81, 224);
   border-radius: 5px;
   margin-top: 6px;
 }
 
-.msginput-div
-{
+.msginput-div {
   padding: 10px 00;
   display: flex;
   justify-content: space-between;
 }
-.msginput-a
-{
+
+.msginput-a {
   display: flex;
 
   align-items: center;
 }
 
-.in-out
-{
+.in-out {
   display: flex;
   justify-content: space-between;
 }
 
 
 
-.signup button
-{
+.signup button {
   background-color: pink;
   width: 100%;
   color: black;
@@ -239,8 +226,7 @@ textarea
   font-size: 15px;
 }
 
-.prev-button
-{
+.prev-button {
   background-color: rgb(249, 249, 248);
   color: black;
   border: 1px solid black;
@@ -248,8 +234,14 @@ textarea
 }
 
 
-.pass-div
-{
+.pass-div {
   display: flex;
   flex-direction: column;
+}
+
+h5 {
+  text-align: center;
+  font-size: 35px;
+  color: grey;
+  font-weight: 600;
 }
