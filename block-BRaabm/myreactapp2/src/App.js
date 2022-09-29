@@ -60,6 +60,7 @@ class App extends React.Component {
   render() {
     return (
       <>
+      <h5>React Wizard Form 🧙‍♂️</h5>
         <div className="container">
 
           <div className="main-div-a">
@@ -222,19 +223,19 @@ function FunctionStep3(props) {
   }
   return (
     <>
-    <div className="pass-div">
-    <label>password</label>
-      <input type="text"
-        name="password"
-        placeholder="type password"
-        value={props.password}
-        onChange={props.HandleChange} />
-    </div>
-     
-        <div className="in-out">
+      <div className="pass-div">
+        <label>password</label>
+        <input type="text"
+          name="password"
+          placeholder="type password"
+          value={props.password}
+          onChange={props.HandleChange} />
+      </div>
+
+      <div className="in-out">
         <button className="prev-button" onClick={props.PreviousF}>Previous</button>
 
-        </div>
+      </div>
       <div className="signup">
         <button>Signup</button>
       </div>
