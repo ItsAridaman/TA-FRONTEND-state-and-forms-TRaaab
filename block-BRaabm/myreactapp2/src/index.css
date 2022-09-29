@@ -148,11 +148,12 @@ input
 
 .inactive
 {
-  background-color: rgb(170, 170, 174);
+  background-color: rgb(228, 228, 244);
   color: black;
   padding: 6px 10px;
   border-radius: 3px;
   margin-right: 5px;
+  border: 2px soild black;
 }
 
 .h2
@@ -240,8 +241,9 @@ textarea
 
 .prev-button
 {
-  background-color: rgb(228, 229, 170);
+  background-color: rgb(249, 249, 248);
   color: black;
+  border: 1px solid black;
 
 }
 
